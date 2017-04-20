@@ -4,9 +4,12 @@ import grails.boot.GrailsApp
 
 class ImageAnalizerController {
 
-    def index() {}
+    def index() {
+        [imageType: "wjkljc;lkj;lzkjxc"]
+    }
 
     def receiveImage() {
+        String imgType = "N/A"
         def fileName = servletContext.getRealPath("image.jpg")
         def f = request.getFile("file")
         if (f) {
@@ -21,11 +24,11 @@ class ImageAnalizerController {
                 String finalDir = servletContext.getRealPath("/modelarffmineriadedatos")
                 Boolean imageType = isCartoon(finalDir, fileName)
                 if (imageType == null) {
-                    render "no file"
+                    imgType = "no file"
                 } else if (imageType) {
-                    render "Imagen Caricatura"
+                    imgType = "Imagen Caricatura"
                 } else {
-                    render "Imagen Real"
+                    imgType = "Imagen Real"
                 }
 
             } catch (Exception ex) {
@@ -34,6 +37,7 @@ class ImageAnalizerController {
         } else {
             render "err no file"
         }
+        [imageType:imgType]
     }
 
     protected static Boolean isCartoon(String finalLocation, String filePath) {

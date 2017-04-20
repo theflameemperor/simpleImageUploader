@@ -24,14 +24,6 @@
             <a class="navbar-brand" style="height:100%" href="/"><img
                     src="${resource(dir: 'images', file: 'BartSimpson-07.png')}"></a>
         </div>
-
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Info</a></li>
-                <li><g:link resource="viewClassified">Collected info</g:link></li>
-            </ul>
-        </div>
-
     </div>
 </div>
 <g:layoutBody/>

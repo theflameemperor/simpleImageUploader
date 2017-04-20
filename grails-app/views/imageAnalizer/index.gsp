@@ -1,9 +1,13 @@
 <!doctype html>
 <html>
 <head>
+    <title>dead inside</title>
+    <script>
+
+    </script>
 </head>
-<html>
+
 <body>
-<p>nothing here</p>
+<p>nothig to see</p>
 </body>
 </html>
