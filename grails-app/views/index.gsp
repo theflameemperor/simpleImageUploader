@@ -27,7 +27,7 @@
                 </p>
                 %{--<form action="/upload-target" class="dropzone" ></form>--}%
                 %{--<button type="submit" style="margin-top: 15px;margin-bottom: 15px" class="btn btn-primary btn-lg btn-home">Subir &nbsp;</button>--}%
-                <g:form id="my-dropzone" controller="ImageAnalizer" action="receiveImage" enctype="multipart/form-data">
+                <g:form controller="ImageAnalizer" action="receiveImage" enctype="multipart/form-data">
                     <input type="file" name="file"/>
                     <input id="submit-all" type="submit" style="margin-top: 15px;margin-bottom: 15px"   class="btn btn-primary btn-lg btn-home"/>
                 </g:form>

@@ -1,0 +1,1 @@
+/home/mrmomo/gitStuff/projects/grails/mineria/imageSearcher/src/main/webapp/image.jpg: /home/mrmomo/gitStuff/projects/grails/mineria/imageSearcher/src/main/webapp/modelarffmineriadedatos/beginProc: No such file or directory
